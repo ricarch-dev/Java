@@ -7,9 +7,9 @@ If they work on Saturday, they receive a 25% bonus, and if
 they have more than one year at the institution, they receive a 20% bonus. */
 
 public class TeacherSalaryCalculator {
+
     public static void main(String[] args) {
         double hourlyRate = 200;
-
         boolean continueCalculating = true;
 
         while (continueCalculating) {
@@ -33,7 +33,8 @@ public class TeacherSalaryCalculator {
     }
 
     public static boolean workedOnSaturday() {
-        int option = JOptionPane.showConfirmDialog(null, "Did they work on Saturday?", "Saturday", JOptionPane.YES_NO_OPTION);
+        int option = JOptionPane.showConfirmDialog(null, "Did they work on Saturday?", "Saturday",
+                JOptionPane.YES_NO_OPTION);
         return (option == JOptionPane.YES_OPTION);
     }
 
