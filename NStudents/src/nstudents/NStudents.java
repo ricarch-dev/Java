@@ -40,7 +40,7 @@ public class NStudents {
                     0,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    opciones,
+                    options,
                     "");
 
             int responseAvailability = JOptionPane.showOptionDialog(
@@ -50,7 +50,7 @@ public class NStudents {
                     0,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    turnos,
+                    turns,
                     "");
 
             int sumNotes = 0;
