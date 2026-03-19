@@ -12,13 +12,13 @@ public class InterviewStudents {
 
         for (int i = 0; i < n; i++) {
             String name = JOptionPane.showInputDialog("Ingrese el nombre del estudiante:");
-            int careerOption = getInteger("Seleccione la carrera:");
+            int careerOption = getCareerOption();
 
             boolean isProgrammer = (careerOption == 1);
-            String availability = getInteger(
+            String availability = getAvailability(
                     "Ingrese disponibilidad (1 para Mañana, 2 para Tarde, 3 para Noche):");
             double average = getAverage();
-            String semester = getInteger("Ingresa el semestre cursante (1 primer semestre, 2 para segundo, etc):");
+            String semester = getSemester("Ingresa el semestre cursante (1 primer semestre, 2 para segundo, etc):");
             if (isProgrammer && (availability.equals("1") || availability.equals("2"))
                     && average >= 15) {
                 JOptionPane.showMessageDialog(null, name + " (Semestre " + semester + ") fue seleccionado.");
